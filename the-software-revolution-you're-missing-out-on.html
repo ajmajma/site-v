@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Volute | The Software Revolution You’re Missing Out On</title>
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/blog.css" />
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		 <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.src.js"></script>
+    <![endif]-->
+	</head>
+	<body>
+		<div id="container" class="container intro-effect-side">
+			<!-- Top Navigation -->
+			<div class="blogHeader clearfix">
+				<a href="index.html"><span>Back to Volute</span></a>
+				<span class="right"><a class="#"><span></span></a></span>
+			</div>
+			<header class="header">
+				<div class="bg-img"><img src="img/4.jpg" alt="Background Image" /></div>
+				<div class="title">
+					<nav class="codrops-demos">
+					</nav>
+					<h1>The Software Revolution You’re Missing Out On</h1>
+					<p class="subline">Introducing wPaaS</p>
+					<p>by <strong>Michael Croft</strong> &#8212; Posted in <strong>Technology</strong> on <strong>October 17th, 2014</strong></p>
+				</div>
+			</header>
+			<button class="trigger" data-info="Click to Read"><span>Trigger</span></button>
+			<article class="content">
+				<div>
+					<p>You’ve heard of SaaS, PaaS, mPaaS and iPaaS, but chances are you have not yet heard about wPaaS. wPaaS is Widget Platform as a Service.</p>
+
+					<p>We understand the movement towards composable business and the idea of breaking apart large, siloed systems into smaller, fine-grain business functions that can be composed on-the-fly to derive unique business processes; this makes sense and its benefits are easily understood. This revolution taking place in our industry offers incredible advantage and moves us further into a digital revolution.</p>
+
+					<p>However, there is no standardized way to interact with these components. The one significant piece missing in all of this is exactly how human beings are best able to consume this information and maximize their productivity and efficiency.</p>
+
+					<p>What good is a revolution of powerful, globally distributed business functions when there is no unified way to integrate with them or interact with these functions in a human readable way? This is the major gap wPaaS fills.</p>
+
+					<h3>Setting a Standard with Widgets</h3>
+
+					<p>Widgets are a new way to integrate with and display information from services. They set a standard for maximizing the power of services and interacting with the information they provide.</p>
+
+					<p>A Widget is a 3D representation of service data as beautiful graphics and elegant, interactive forms. It can be rotated and flipped with a click or a touch to expose new “faces.” A Widget can represent different data on each face, or different views of the same data.</p>
+
+					<p>A Widget is shareable and offline capable. It can be “opened” to expose what’s inside, which includes a detailed representation of the display on one of its multiple faces. A Widget can also contain other Widgets for even further introspection of information.</p>
+
+					<p>Another major characteristic of a Widget is the fact that it can be rendered on any desktop, laptop, tablet and smartphone. As it uses the latest browser technologies, it offers significant power and in many cases eliminates the need for a separate native application for mobile devices.</p>
+
+					<p>The PaaS part of wPaaS is a Platform that allows interaction and integration with Widgets. It is the ecosystem within which Widgets can operate to their full capability. The Platform is cloud-based and acts as a centralized marketplace of Widgets. As these Widgets are visual representations of service data, wPaaS truly offers a game-changing shift in the industry to allow organizations to maximize competitive advantage with reduced costs and time-to-market.</p>
+
+					<h3>Widgets for all Business Software</h3>
+
+					<p>wPaaS is the next generation of software as it allows a unified and standard way to interact with disparate, composable functions or services. It fosters competitive advantage as it allows full customization in a standardized way. The same Widgets can be referenced from a Widget Marketplace but assembled differently by different organizations, producing unique result sets.</p>
+
+					<p>wPaaS encourages a vision of all relevant business software having a wPaaS version. Just as major software providers offer mobile native app versions of their products for each device, soon they will be offering Widget versions for all devices.</p>
+
+					<p>Volute embodies wPaaS, with a mission to standardize a global network of collaborating software that improves human capacity and quality of life through efficiency.</p>
+
+					<p><strong>Visit <a href="http://www.volute.co">www.Volute.co</a>, call 888.316.6303 or email sales@volute.co to talk about how you can join the wPaaS movement.</strong></p>
+				</div>
+			</article>
+			<section class="related">
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script>
+			(function() {
+
+				// detect if IE : from http://stackoverflow.com/a/16657946		
+				var ie = (function(){
+					var undef,rv = -1; // Return value assumes failure.
+					var ua = window.navigator.userAgent;
+					var msie = ua.indexOf('MSIE ');
+					var trident = ua.indexOf('Trident/');
+
+					if (msie > 0) {
+						// IE 10 or older => return version number
+						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+					} else if (trident > 0) {
+						// IE 11 (or newer) => return version number
+						var rvNum = ua.indexOf('rv:');
+						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+					}
+
+					return ((rv > -1) ? rv : undef);
+				}());
+
+
+				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179					
+				// left: 37, up: 38, right: 39, down: 40,
+				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+
+				function preventDefault(e) {
+					e = e || window.event;
+					if (e.preventDefault)
+					e.preventDefault();
+					e.returnValue = false;  
+				}
+
+				function keydown(e) {
+					for (var i = keys.length; i--;) {
+						if (e.keyCode === keys[i]) {
+							preventDefault(e);
+							return;
+						}
+					}
+				}
+
+				function touchmove(e) {
+					preventDefault(e);
+				}
+
+				function wheel(e) {
+					// for IE 
+					//if( ie ) {
+						//preventDefault(e);
+					//}
+				}
+
+				function disable_scroll() {
+					window.onmousewheel = document.onmousewheel = wheel;
+					document.onkeydown = keydown;
+					document.body.ontouchmove = touchmove;
+				}
+
+				function enable_scroll() {
+					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
+				}
+
+				var docElem = window.document.documentElement,
+					scrollVal,
+					isRevealed, 
+					noscroll, 
+					isAnimating,
+					container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function scrollY() {
+					return window.pageYOffset || docElem.scrollTop;
+				}
+				
+				function scrollPage() {
+					scrollVal = scrollY();
+					
+					if( noscroll && !ie ) {
+						if( scrollVal < 0 ) return false;
+						// keep it that way
+						window.scrollTo( 0, 0 );
+					}
+
+					if( classie.has( container, 'notrans' ) ) {
+						classie.remove( container, 'notrans' );
+						return false;
+					}
+
+					if( isAnimating ) {
+						return false;
+					}
+					
+					if( scrollVal <= 0 && isRevealed ) {
+						toggle(0);
+					}
+					else if( scrollVal > 0 && !isRevealed ){
+						toggle(1);
+					}
+				}
+
+				function toggle( reveal ) {
+					isAnimating = true;
+					
+					if( reveal ) {
+						classie.add( container, 'modify' );
+					}
+					else {
+						noscroll = true;
+						disable_scroll();
+						classie.remove( container, 'modify' );
+					}
+
+					// simulating the end of the transition:
+					setTimeout( function() {
+						isRevealed = !isRevealed;
+						isAnimating = false;
+						if( reveal ) {
+							noscroll = false;
+							enable_scroll();
+						}
+					}, 600 );
+				}
+
+				// refreshing the page...
+				var pageScroll = scrollY();
+				noscroll = pageScroll === 0;
+				
+				disable_scroll();
+				
+				if( pageScroll ) {
+					isRevealed = true;
+					classie.add( container, 'notrans' );
+					classie.add( container, 'modify' );
+				}
+				
+				window.addEventListener( 'scroll', scrollPage );
+				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+			})();
+		</script>
+	</body>
+</html>
