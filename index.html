@@ -106,12 +106,12 @@ var WRInitTime=(new Date()).getTime();
         <nav class="st-menu st-effect-9" id="menu-9">
             
                 <h2 class="icon icon-lab">About Volute</h2>
-                <ul>
-                    <li><a class="icon icon-data" href="#">Item</a></li>
-                    <li><a class="icon icon-location" href="#">Item</a></li>
-                    <li><a class="icon icon-study" href="#">Item</a></li>
-                    <li><a class="icon icon-photo" href="#">Item</a></li>
-                    <li><a class="icon icon-wallet" href="#">Item</a></li>
+                <ul id="sideMenItems">
+                    <li><a class="icon icon-data sideItem" href="#process">Item</a></li>
+                    <li><a class="icon icon-location sideItem" href="#process">Item</a></li>
+                    <li><a class="icon icon-study sideItem" href="#process">Item</a></li>
+                    <li><a class="icon icon-photo sideItem" href="#process">Item</a></li>
+                    <li><a class="icon icon-wallet sideItem" href="#process">Item</a></li>
                 </ul>
             </nav>
 
@@ -523,78 +523,84 @@ var WRInitTime=(new Date()).getTime();
             <div class="row">
             Learn more about how Volute’s new web app technology competes head-to-head with native and hybrid apps in areas like speed, user experience and offline capability.
         </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <i class="fa fa-envelope-o"></i>
-                    <h4>Get in touch</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="tel:8883166303">888 316 6303 ext.1</a></li>
-                        <li><a href="mailto:sales@volute.co">sales@volute.co</a></li>
-                        <li>M-F 9am - 5pm EST</li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <i class="fa fa-map-marker"></i>
-                    <h4>Our Location</h4>
-                    <address>640 George Washington Hwy<br>Building C<br> Lincoln, RI 02865</address>
-                </div> <!-- end Our Location -->
-
-               
-                 <div class="col-lg-4 col-md-4 col-sm-4">
-                    <i class="fa fa-users"></i>
-                    <h4>Support</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="tel:8883166303">888 316 6303 ext.2</a></li>
-                        <li><a href="mailto:operations@volute.co">operations@volute.co</a></li>
-                    </ul>
-                </div> <!-- end Our Location -->
-
-            </div> <!-- end row -->
+           
             
             <!-- CONTACT FORM -->
             <div id="successmsg1" style="display: none;"></div>
                 <form id="form1" name="form1" method="POST" >
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="validationTitle" style="display: none;">Pleas Enter a Valid Name</div>
-                            <input class="" type="text" name="name" id="name" placeholder="Name" />
-                        </div> 
-                       
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="validationEmail" style="display: none;">Please Enter a Valid Email</div>
-                            <input class="" type="text" name="email1" id="email1" placeholder="Email" />
-                        </div>
-                       
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <input type="text" name="phone1" id="phone1" maxlength="3" placeholder="Phone">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="validationTitle" style="display: none;">Pleas Enter a Valid Name</div>
+                                <input class="" type="text" name="name" id="name" placeholder="Name" />
+                            </div> 
+                           
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="validationEmail" style="display: none;">Please Enter a Valid Email</div>
+                                <input class="" type="text" name="email1" id="email1" placeholder="Email" />
+                            </div>
+                           
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <input type="text" name="phone1" id="phone1" maxlength="3" placeholder="Phone">
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="text" name="phone2" id="phone2" maxlength="3">
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="text" name="phone3" id="phone3" maxlength="4">
+                                    </div>
                                 </div>
-                                <div class="col-xs-4">
-                                    <input type="text" name="phone2" id="phone2" maxlength="3">
-                                </div>
-                                <div class="col-xs-4">
-                                    <input type="text" name="phone3" id="phone3" maxlength="4">
+                            </div>  
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="validationMessage" style="display: none;">Please Enter a Message</div>
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+         
+                        
+                      
+                            <div class="col-md-12">
+                                <div class="text-right">
+                                    <button class="btn btn-custom" id="submit_btn" name="submit_btn"><span>I Want to Know More</span></button>
                                 </div>
                             </div>
-                        </div> 
+
+                        </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+
+                         <div class="row">
+                            <div class="col-sm-12">
+
+                            <h4>Our Location</h4>
+                            <address>640 George Washington Hwy<br>Building C<br> Lincoln, RI 02865</address>
+                            </div> <!-- end Our Location -->
+
+                            <div class="col-sm-12">
+
+                            <h4>Get in touch</h4>
+                            <ul class="list-unstyled">
+                            <li><a href="tel:8883166303">888 316 6303 ext.1</a></li>
+                            <li><a href="mailto:sales@volute.co">sales@volute.co</a></li>
+                            <li>M-F 9am - 5pm EST</li>
+                            </ul>
+                            </div>
+
+                            <div class="col-sm-12">
+
+                            <h4>Support</h4>
+                            <ul class="list-unstyled">
+                            <li><a href="tel:8883166303">888 316 6303 ext.2</a></li>
+                            <li><a href="mailto:operations@volute.co">operations@volute.co</a></li>
+                            </ul>
+                            </div> <!-- end Our Location -->
+
+                        </div> <!-- end row -->
+
+                            
                     </div>
-                    
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="validationMessage" style="display: none;">Please Enter a Message</div>
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
-                        </div>
-                    </div> 
-                    
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="text-right">
-                                <button class="btn btn-custom" id="submit_btn" name="submit_btn"><span>I Want to Know More</span></button>
-                            </div>
-                        </div>
-                    </div> <!-- end button -->
+                  
                 </form>
             </div><!-- END FORM -->
         </div> <!-- end container -->

@@ -31,6 +31,7 @@
 			vid = document.getElementById("bgvid"),
 			container = document.getElementById( 'st-container' ),
 			buttons = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > .example7' ) ),
+			menuItems = Array.prototype.slice.call( document.querySelectorAll( '#sideMenItems > li' ) ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
 			resetMenu = function() {
@@ -38,6 +39,22 @@
 				classie.remove( hamburg, 'ham-open' );
 				vid.play();
 			};
+			menuItems.forEach( function( ele, iv ) {
+
+				ele.addEventListener( eventtype, function( eve ) {
+						eve.stopPropagation();
+						eve.preventDefault();
+						resetMenu();
+						//add scrolling on click
+						var $anchor = $(this).find("a");
+					    $('html, body').stop().animate({
+					        scrollTop: $($anchor.attr('href')).offset().top - 50
+					    }, 1800, 'easeInOutExpo');
+
+				});
+			});
+		
+
 	
 		buttons.forEach( function( el, i ) {
 			var effect = el.getAttribute( 'data-effect' );

@@ -1389,13 +1389,40 @@ a.support {
     text-decoration: none;
 }
 .contact input {
+    float: left;
+    border: 0;
+    width: 90%;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: .1em;
+    color: #ea6060;
+    background-color: #fff;
+    border-radius: 0;
+    border-bottom: 1px solid #28282E;
+    margin-bottom: 50px;
+}
+
+.contact textarea {
+    border: 0;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: .1em;
+    color: #ea6060;
+    background-color: #fff;
+    border-radius: 0;
+    border-bottom: 1px solid #28282E;
+    margin-bottom: 50px;
+    overflow: hidden;
     width: 100%;
-    height: 43px;
-    margin-bottom: 20px;
-    line-height: 20px;
-    padding-left: 15px;
-    font-size: 15px;
-    color: #000000;
+word-wrap: break-word;
+resize: vertical;
+margin-left: 0px;
+margin-right: 0px;
+
+}
+
+#form1 {
+    padding-top: 20px;
 }
 .contact .validation {
     border: 1px solid #ff0000;
@@ -1409,13 +1436,7 @@ a.support {
 }
 
 .contact textarea {
-     width: 100%;
-    height: 170px;
-    margin-bottom: 15px;
-    padding: 15px 55px 15px 15px;
-    font-size: 15px;
-    color: #000000;
-    line-height: 28px;
+
 }
 textarea {
     resize: none;
