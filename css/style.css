@@ -1543,7 +1543,8 @@ textarea {
 .process h5 {
     font-weight: 300;
     padding: 80px;
-    font-size: 34px;
+    font-size: 38px;
+    line-height: 46px;
     font-family: 'Oswald';
 
     }
@@ -2457,7 +2458,7 @@ background-image: url('../img/scene2.jpg');
 background-repeat: no-repeat;
 background-position: center center;
 height: auto;
-height: 500px;
+height: 400px;
 background-size: cover;
 }
 
@@ -2478,6 +2479,7 @@ background-size: cover;
     font-weight: 300;
     color: #ea6060;
     font-size: 44px;
+    padding-top: 50px;
 }
 
 .mock1 .mobileClip {
@@ -2502,7 +2504,7 @@ background-size: cover;
     left: -50%; 
 }
 .mock1 .mobileClip ul li {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     font-size: 20px;
 }
 
@@ -2522,23 +2524,24 @@ border-top: 30px solid #fff;*/
 .mock2 {
 background-image: url('../img/x2.jpg');
 background-size: cover;
+
 background-repeat: no-repeat;
 background-position: center center;
 height: auto;
 }
 .mock2 .title {
     font-weight: 300;
-    padding-top: 25px;
+    padding-top: 70px;
     padding-bottom: 30px;
     color: #fff;
-    font-size: 44px;
+    font-size: 50px;
     margin: 0;
 
 }
 
 .mock2 .mobileClip {
     background-color: rgba(234, 96, 96, 0.87);
-    height: 100%;
+    height: 400px;
     padding: 0 5%;
 }
 .mock2 .mobileClip p {
@@ -2554,7 +2557,7 @@ height: auto;
 
 }
 .mock2 .mobileClip ul li {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     color: #fff;
     font-size: 20px;
 }
@@ -2603,14 +2606,14 @@ padding: 0 5%;
     background-image: url('../img/scene3.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    height: 500px;
+    height: 400px;
     background-size: cover;
 }
 .mock4 .title {
      font-weight: 300;
-    padding-top: 25px;
+    padding-top: 70px;
     color: #ea6060;
-    font-size: 44px;
+    font-size: 50px;
     margin-top: 0;
 }
 .mock4 .mobileClip {
@@ -2675,7 +2678,7 @@ background-color: rgba(255,255,255,0.9);
     left: -50%;
 }
 .mock4 .mobileClip ul li {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     color: #6F6F6F;
     font-size: 20px;
 }
@@ -2779,11 +2782,10 @@ background-color: rgba(255,255,255,0.9);
     color: #ea6060;
 }
 #anatomy4 h5{
-    font-size: 22px;
+    font-size: 24px;
     color: #333333;
-    line-height: 30px;
-    font-weight: 300;
-    font-family: 'Oswald';
+    line-height: 38px;
+    font-family: 'lato';
 }
 
 #anatomy4 i{
