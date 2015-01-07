@@ -1362,11 +1362,22 @@ figure.port-effect:hover figcaption{
     
 }
 .contact h4{
+    font-family: 'Oswald';
+    font-weight: 300;
     font-size: 22px;
     line-height: 28px;
     margin-bottom: 20px;
     color: #ea6060;
 }
+.contact h5 {
+    font-family: 'Oswald';
+    font-weight: 300;
+    font-size: 22px;
+    text-align: left;
+    padding-left: 30px;
+
+}
+
 .contact i{
     margin-bottom: 0px;
     font-size: 36px;
@@ -2462,6 +2473,13 @@ height: 400px;
 background-size: cover;
 }
 
+.mock1 .floating_item {
+    width: 37%;
+    float: left;
+    margin-left: 8%;
+
+}
+
 .mock1 .mobileClip{
         background-color: rgba(255,255,255,0.9);
     }
@@ -2479,11 +2497,12 @@ background-size: cover;
     font-weight: 300;
     color: #ea6060;
     font-size: 44px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .mock1 .mobileClip {
     height: 100%;
+    margin-left: 3%;
     padding: 0 5%;
 }
 .mock1 .mobileClip p {
@@ -2504,7 +2523,7 @@ background-size: cover;
     left: -50%; 
 }
 .mock1 .mobileClip ul li {
-    padding-bottom: 30px;
+    padding-bottom: 18px;
     font-size: 20px;
 }
 
@@ -2529,9 +2548,16 @@ background-repeat: no-repeat;
 background-position: center center;
 height: auto;
 }
+
+.mock2 .floating_item {
+    width: 35%;
+    float: right;
+    margin-right: 2%;
+
+}
 .mock2 .title {
     font-weight: 300;
-    padding-top: 70px;
+    padding-top: 50px;
     padding-bottom: 30px;
     color: #fff;
     font-size: 50px;
@@ -2542,6 +2568,8 @@ height: auto;
 .mock2 .mobileClip {
     background-color: rgba(234, 96, 96, 0.87);
     height: 400px;
+    float: right;
+    margin-right: 3%;
     padding: 0 5%;
 }
 .mock2 .mobileClip p {
@@ -2557,7 +2585,7 @@ height: auto;
 
 }
 .mock2 .mobileClip ul li {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     color: #fff;
     font-size: 20px;
 }
@@ -2609,17 +2637,25 @@ padding: 0 5%;
     height: 400px;
     background-size: cover;
 }
+.mock4 .floating_item {
+    float: left;
+    width: 38%;
+    margin-left: 1%;
+
+}
+
 .mock4 .title {
      font-weight: 300;
-    padding-top: 70px;
+    padding-top: 50px;
     color: #ea6060;
     font-size: 50px;
     margin-top: 0;
 }
 .mock4 .mobileClip {
- 
+
 height: 100%;
 padding: 0 5%;
+margin-left: 3%;
 background-color: rgba(255,255,255,0.9);
 
 }
@@ -2678,7 +2714,7 @@ background-color: rgba(255,255,255,0.9);
     left: -50%;
 }
 .mock4 .mobileClip ul li {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     color: #6F6F6F;
     font-size: 20px;
 }
@@ -2925,12 +2961,15 @@ height: 100%;
 .st-menu ul {
     margin: 0;
     padding: 0;
+    padding-right: 55px;
     list-style: none;
 }
 
 .st-menu h2 {
     margin: 0;
     padding: 1em;
+    padding-right: 135px;
+    text-align: right;
     color: #ea6060;
     text-shadow: 0 0 1px rgba(0,0,0,0.1);
     font-weight: 300;
@@ -2938,6 +2977,7 @@ height: 100%;
 }
 
 .st-menu ul li a {
+    text-align: right;
     display: block;
     padding: 1em 1em 1em 1.2em;
     outline: none;
@@ -3021,11 +3061,14 @@ height: 100%;
 
 
 .banner_wrap h1 {
-    font-size: 88px;
+    font-size: 120px;
+  /*  font-weight: 300;*/
+    color: #ea6060;
     padding-bottom: 15px;
 
     }
 .banner_wrap p {
+    font-size: 28px;
     padding-bottom: 15px;
     }
 
@@ -3038,6 +3081,7 @@ height: 100%;
     right: 0;
     width: 100%;
     z-index: 1900;
+    transition: 0.3s all ease-in;
 
 }
 
@@ -3076,7 +3120,7 @@ background-size: cover;
     width: 100%;
     height: 100%;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.71);
+    background-color: rgba(255, 255, 255, 0.61);
 }
 
 .menu {
@@ -3189,6 +3233,16 @@ background-size: cover;
     padding: 15px 0;
 
 }
+
+.compareItem .compareImg {
+    height: 500px;
+
+}
+
+.angl2 {
+background: #fff url("../img/Angl2.jpg") no-repeat bottom center;
+background-size: contain;
+}
 .compareItem .compareTitle {
     font-size: 28px;
     padding-bottom: 5px;
@@ -3254,3 +3308,52 @@ font-weight: 300;
   -ms-transform-origin: 50%;
   transform-origin: 50%;
 }
+
+.change_header {
+    background-color: #28282E;
+    padding: 15px 0;
+    margin-top: 10px;
+}
+
+.change_header .menu span, .change_header .menu span:before, .change_header  .menu span:after {
+    background-color: #fff;
+}
+
+.contact_modify {
+    text-align: left;
+
+}
+
+.request_now {
+    text-decoration: none;
+    z-index: 9999;
+    font-size: 24px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+    color: #fff;
+    font-family: 'Oswald';
+    font-weight: 300;
+    padding-top: 10px;
+    background-color: #ea6060;
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    width: 150px;
+    height: 50px;
+
+}
+
+.request_now:hover {
+    color: #fff;
+    text-decoration: none;
+} 
+
+.request_now:visited {
+    color: #fff;
+    text-decoration: none;
+} 
+
+.request_now:active {
+    color: #fff;
+    text-decoration: none;
+} 

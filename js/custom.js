@@ -187,22 +187,32 @@ $(function() {
     });
 });
 
+$(function() {
+    $('.request_now').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - 50
+        }, 1800, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
 /* ==============================================
 Scroll to top
 =============================================== */
      
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn();
+            $('.request_now').fadeIn();
         } else {
-            $('.back-to-top').fadeOut();
+            $('.request_now').fadeOut();
         }
     }); 
 
-    $('.back-to-top').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 1000);
-        return false;
-    });
+    // $('.back-to-top').click(function(){
+    //     $("html, body").animate({ scrollTop: 0 }, 1000);
+    //     return false;
+    // });
 /* ==============================================
 Validate Contact Us Data
 =============================================== */
@@ -333,29 +343,44 @@ $(".navbar-nav").click(function(e) {
 });
 
 
-$(function() {
+// $(function() {
     
-    var el = $('.intro'),
-        mac = $('#mac'),
-        offset = mac.offset(),
-        windowHeight = $(window).height();
+//     var el = $('.intro'),
+//         mac = $('#mac'),
+//         offset = mac.offset(),
+//         windowHeight = $(window).height();
 
-    $(window).on('scroll', function() {
+//     $(window).on('scroll', function() {
 
-        $('h1').fadeOut(500);
+//         $('h1').fadeOut(500);
 
-        var windowTop = $(window).scrollTop(),
-            scrollPercent = (offset.top - windowTop) / offset.top,
-            scale = 'scale(' + scrollPercent + ')';
+//         var windowTop = $(window).scrollTop(),
+//             scrollPercent = (offset.top - windowTop) / offset.top,
+//             scale = 'scale(' + scrollPercent + ')';
 
-        el.css('transform', scale);
+//         el.css('transform', scale);
 
-        if (windowTop >= 940) {
-            el.hide();
+//         if (windowTop >= 940) {
+//             el.hide();
+//         } else {
+//             el.show();
+//         }
+//     });
+
+// });
+
+function initMe() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = $(window).height() - 50,
+            header = document.querySelector(".header_fixed");
+        if (distanceY > shrinkOn) {
+            classie.add(header,"change_header");
         } else {
-            el.show();
+            if (classie.has(header,"change_header")) {
+                classie.remove(header,"change_header");
+            }
         }
     });
-
-});
-
+}
+window.onload = initMe();
