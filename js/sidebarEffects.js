@@ -48,7 +48,7 @@
 						//add scrolling on click
 						var $anchor = $(this).find("a");
 					    $('html, body').stop().animate({
-					        scrollTop: $($anchor.attr('href')).offset().top - 50
+					        scrollTop: $($anchor.attr('href')).offset().top - 140
 					    }, 1800, 'easeInOutExpo');
 
 				});

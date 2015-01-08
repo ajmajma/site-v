@@ -868,9 +868,7 @@ figure.port-effect:hover figcaption{
     .mobileClip ul {
         
     }
-    .mock4{
-        background-size: contain!important;
-    }
+
     }
 @media (max-width: 767px) {
     .mobileClip ul {
@@ -1372,7 +1370,7 @@ figure.port-effect:hover figcaption{
 .contact h5 {
     font-family: 'Oswald';
     font-weight: 300;
-    font-size: 22px;
+    font-size: 28px;
     text-align: left;
     padding-left: 30px;
 
@@ -1554,9 +1552,16 @@ textarea {
 .process h5 {
     font-weight: 300;
     padding: 80px;
-    font-size: 38px;
+    font-size: 48px;
     line-height: 46px;
     font-family: 'Oswald';
+
+    }
+.process h5 strong {
+    color: #ea6060;
+    font-weight: 300;
+}
+    @media (max-width: 767px) {
 
     }
 
@@ -2485,14 +2490,7 @@ background-size: cover;
     }
 
 
-@media (max-width: 991px) {
-    .mock1 {
-        background-position: center center;
-      
-    }
-    
 
-}
 .mock1 .title {
     font-weight: 300;
     color: #ea6060;
@@ -2525,6 +2523,21 @@ background-size: cover;
 .mock1 .mobileClip ul li {
     padding-bottom: 18px;
     font-size: 20px;
+}
+
+@media (max-width: 991px) {
+    .mock1 {
+        background-position: center center;
+      
+    }
+    .mock1 .mobileClip{
+        margin-left: 0;
+    }
+    
+    .mock1 .mobileClip h3{
+        margin-top: 0;
+    }
+
 }
 
 .conanatomy2:after{
@@ -2591,6 +2604,13 @@ height: auto;
 }
 .mock2 .mobileClip ul li i {
     color: #28282E;
+}
+
+@media (max-width: 991px) {
+    .mock2 .mobileClip{
+        margin-right: 0;
+        width: 100%;
+    }
 }
 
 .mock3 {
@@ -2671,6 +2691,7 @@ background-color: rgba(255,255,255,0.9);
 }
 @media (max-width: 991px) { 
     .mock4 .mobileClip {    
+        margin-left: 0;
          background-color: rgba(255,255,255,0.9);
 
     }
@@ -2680,7 +2701,7 @@ background-color: rgba(255,255,255,0.9);
     }
 
     .process {
-        padding-top: 30px!important;
+  
     }
     .mock4, .mock2, .mock1{
         height: auto;
@@ -2800,6 +2821,7 @@ background-color: rgba(255,255,255,0.9);
     height: auto;
         background-image: url('../img/heroTest1.jpg');
         background-size: cover;
+        background-position: center center;
     /*background-color: #28282E;*/
     color: #fff;
     padding-bottom: 125px;
@@ -3001,7 +3023,19 @@ height: 100%;
     color: #fff;
 }
 
-
+.menu_social {
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+}
+.menu_social i {
+    font-size: 22px;
+    padding: 15px;
+    color: #6F6F6F;
+}
+.menu_social i:hover {
+    color: #ea6060;
+}
 .st-effect-9.st-container {
     -webkit-perspective: 1500px;
     perspective: 1500px;
@@ -3045,8 +3079,9 @@ height: 100%;
 }
 
 #home {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    display:block;
     position: relative;
 }
 
@@ -3091,28 +3126,22 @@ height: 100%;
 }
 
 .video_contain{
-    display: block;
-    position: absolute;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+   position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
 }
 
 video {
-top: 0;
-left: 0;
-min-width: 100%;
-min-height: 100%;
-
-z-index: -100;
-background-size: cover;
+position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
 }
 
 .video_shader {
@@ -3225,7 +3254,7 @@ background-size: cover;
 }
 
 .compare .change_how h5 {
-    font-size: 22px;
+    font-size: 25px;
     color: #6F6F6F;
 }
 
@@ -3240,11 +3269,12 @@ background-size: cover;
 }
 
 .angl2 {
-background: #fff url("../img/Angl2.jpg") no-repeat bottom center;
+background: #fff url("../img/newslide3.jpg") no-repeat center center;
 background-size: contain;
 }
 .compareItem .compareTitle {
-    font-size: 28px;
+    font-size: 24px;
+    color: #6F6F6F;
     padding-bottom: 5px;
 
 }
@@ -3323,8 +3353,16 @@ font-weight: 300;
     text-align: left;
 
 }
+@media (max-width: 991px) {
+    .contact_modify {
+        padding-top: 35px;
+        text-align: center;
+    }
+}
 
 .request_now {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
     text-decoration: none;
     z-index: 9999;
     font-size: 24px;

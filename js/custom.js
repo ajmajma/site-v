@@ -101,7 +101,7 @@ $(document).ready(function() {
         singleItem: false,
         stopOnHover: false,
         startDragging: true,
-        autoPlay: true
+        autoPlay: 10000
     });
 });
 
@@ -130,23 +130,23 @@ $(document).ready(function() {
  Owl carousel for Twitter-Tweet
  =============================================== */
 
-$(document).ready(function() {
-    $("#twitter").owlCarousel({
-        // Most important owl features
-        slideSpeed : 300,
-        items: 1,
-        itemsCustom: false,
-        itemsDesktop: [1199, 1],
-        itemsDesktopSmall: [980, 1],
-        itemsTablet: [768, 1],
-        itemsTabletSmall: false,
-        itemsMobile: [479, 1],
-        singleItem: false,
-        stopOnHover: false,
-        startDragging: true,
-        autoPlay: 8000
-    });
-});
+// $(document).ready(function() {
+//     $("#twitter").owlCarousel({
+//         // Most important owl features
+//         slideSpeed : 300,
+//         items: 1,
+//         itemsCustom: false,
+//         itemsDesktop: [1199, 1],
+//         itemsDesktopSmall: [980, 1],
+//         itemsTablet: [768, 1],
+//         itemsTabletSmall: false,
+//         itemsMobile: [479, 1],
+//         singleItem: false,
+//         stopOnHover: false,
+//         startDragging: true,
+//         autoPlay: 8000
+//     });
+// });
 
 
 /* ==============================================
@@ -172,7 +172,7 @@ $(function() {
     $('.navbar a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 50
+            scrollTop: $($anchor.attr('href')).offset().top + 60
         }, 1800, 'easeInOutExpo');
         event.preventDefault();
     });
@@ -200,14 +200,7 @@ $(function() {
 /* ==============================================
 Scroll to top
 =============================================== */
-     
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('.request_now').fadeIn();
-        } else {
-            $('.request_now').fadeOut();
-        }
-    }); 
+ 
 
     // $('.back-to-top').click(function(){
     //     $("html, body").animate({ scrollTop: 0 }, 1000);
@@ -376,9 +369,11 @@ function initMe() {
             header = document.querySelector(".header_fixed");
         if (distanceY > shrinkOn) {
             classie.add(header,"change_header");
+            $(".request_now").fadeIn();
         } else {
             if (classie.has(header,"change_header")) {
                 classie.remove(header,"change_header");
+                $(".request_now").fadeOut();
             }
         }
     });
