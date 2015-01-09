@@ -12,6 +12,12 @@ $(window).load(function() {
 disables for mobile
  =============================================== */
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+$('video').hide();
+}
+
+
+
 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
@@ -65,9 +71,9 @@ jQuery("html").niceScroll({
  Sticky header on scroll
  =============================================== */
 
-$(window).load(function() {
-    $(".sticky").sticky({topSpacing: 0});
-});
+// $(window).load(function() {
+//     $(".sticky").sticky({topSpacing: 0});
+// });
 
 /* ==============================================
  Parallax
@@ -105,48 +111,6 @@ $(document).ready(function() {
     });
 });
 
-/* ==============================================
- Owl carousel for Upcoming Project
- =============================================== */
-
-// $(document).ready(function() {
-//     $("#project-carosel").owlCarousel({
-//         // Most important owl features
-//         slideSpeed : 1200,
-//         items: 1,
-//         itemsCustom: false,
-//         itemsDesktop: [1199, 1],
-//         itemsDesktopSmall: [980, 1],
-//         itemsTablet: [768, 1],
-//         itemsTabletSmall: false,
-//         itemsMobile: [479, 1],
-//         singleItem: false,
-//         stopOnHover: false,
-//         startDragging: true,
-//     });
-// });
-
-/* ==============================================
- Owl carousel for Twitter-Tweet
- =============================================== */
-
-// $(document).ready(function() {
-//     $("#twitter").owlCarousel({
-//         // Most important owl features
-//         slideSpeed : 300,
-//         items: 1,
-//         itemsCustom: false,
-//         itemsDesktop: [1199, 1],
-//         itemsDesktopSmall: [980, 1],
-//         itemsTablet: [768, 1],
-//         itemsTabletSmall: false,
-//         itemsMobile: [479, 1],
-//         singleItem: false,
-//         stopOnHover: false,
-//         startDragging: true,
-//         autoPlay: 8000
-//     });
-// });
 
 
 /* ==============================================
@@ -268,47 +232,6 @@ $("#submit_btn").click(function(e) {
     return false;
 });
 
-/* ==============================================
- Volute Features script
- =============================================== */
-
-$("#accordion a").click(function(e) {
-
-    if($(this).hasClass("panel1")){
-        $(".pan1").show();
-        $(".pan2").hide();
-        $(".pan3").hide();
-        $(".pan4").hide();
-        $(".pan5").hide();
-    }else if($(this).hasClass("panel2")){
-        $(".pan1").hide();
-        $(".pan2").show();
-        $(".pan3").hide();
-        $(".pan4").hide();
-        $(".pan5").hide();
-    }else if($(this).hasClass("panel3")){
-        $(".pan1").hide();
-        $(".pan2").hide();
-        $(".pan3").show();
-        $(".pan4").hide();
-        $(".pan5").hide();
-    }else if($(this).hasClass("panel4")){
-        $(".pan1").hide();
-        $(".pan2").hide();
-        $(".pan3").hide();
-        $(".pan4").show();
-        $(".pan5").hide();
-
-    }else if($(this).hasClass("panel5")){
-        $(".pan1").hide();
-        $(".pan2").hide();
-        $(".pan3").hide();
-        $(".pan4").hide();
-        $(".pan5").show();
-
-    }
-
-});
 /* ==============================================
 responsive cube timer
  =============================================== */
