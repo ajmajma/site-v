@@ -45,11 +45,24 @@
 						eve.stopPropagation();
 						eve.preventDefault();
 						resetMenu();
-						//add scrolling on click
 						var $anchor = $(this).find("a");
-					    $('html, body').stop().animate({
-					        scrollTop: $($anchor.attr('href')).offset().top - 140
-					    }, 1800, 'easeInOutExpo');
+						if($anchor.attr('href') == "#compare"){
+						    $('html, body').stop().animate({
+						        scrollTop: $($anchor.attr('href')).offset().top - 280
+						    }, 1800, 'easeInOutExpo');
+						}else if($anchor.attr('href') == "#anatomy4"){
+						    $('html, body').stop().animate({
+						        scrollTop: $($anchor.attr('href')).offset().top - 140
+						    }, 1800, 'easeInOutExpo');
+						}else if($anchor.attr('href') == "#process"){
+						    $('html, body').stop().animate({
+						        scrollTop: $($anchor.attr('href')).offset().top - 100
+						    }, 1800, 'easeInOutExpo');
+						}else if($anchor.attr('href') == "#contact"){
+						    $('html, body').stop().animate({
+						        scrollTop: $($anchor.attr('href')).offset().top - 60
+						    }, 1800, 'easeInOutExpo');
+						}
 
 				});
 			});

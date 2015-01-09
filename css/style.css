@@ -1383,7 +1383,8 @@ border-bottom: 1px solid #c9c9c9;
 
 .contact i{
     margin-bottom: 0px;
-    font-size: 36px;
+    padding: 5px;
+    font-size: 16px;
     line-height: 36px;
     color: #ea6060;
 }
@@ -1404,6 +1405,7 @@ a.support {
 }
 .contact input {
     float: left;
+    height: 50px;
     border: 0;
     width: 90%;
     font-size: 14px;
@@ -1417,6 +1419,7 @@ a.support {
 }
 
 .contact textarea {
+    min-height: 140px;
     border: 0;
     font-size: 14px;
     line-height: 30px;
@@ -1428,11 +1431,10 @@ a.support {
     margin-bottom: 50px;
     overflow: hidden;
     width: 100%;
-word-wrap: break-word;
-resize: vertical;
-margin-left: 0px;
-margin-right: 0px;
-
+    word-wrap: break-word;
+    resize: vertical;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #form1 {
@@ -1560,21 +1562,31 @@ textarea {
     font-size: 48px;
     line-height: 46px;
     font-family: 'Oswald';
+}
 
-    }
 .process h5 strong {
     color: #ea6060;
     font-weight: 300;
 }
-    @media (max-width: 767px) {
-
+@media (max-width: 600px) {
+    .process h5 {
+        padding: 30px;
     }
 
+}
+
+
 .process p {
-    text-align: center;
+    text-align: center;         
 }
 .process .title {
     font-size: 36px;
+}
+@media (max-width: 400px) {
+    .process .title {
+        font-size: 36px!important;
+    }
+
 }
 
 .newMarketPic {
@@ -2788,15 +2800,13 @@ background-color: rgba(255,255,255,0.9);
     font-weight: 500;
     color: #fff;
 }
-#anatomy i{
-    position: absolute;
-    width: 200px;
+#anatomy .divider_hero{
+    width: 10%;
     height: 1px;
+    border-bottom: 1px solid #fff;
     background: #fff;
-    left: 50%;
-    margin-left: -100px;
-    content: "";
-    bottom: -60px;
+    margin: 0 auto;
+   
 }
 
 #anatomy2{
@@ -2834,6 +2844,7 @@ background-color: rgba(255,255,255,0.9);
 
 #anatomy4{
     height: auto;
+    position: relative;
         background-image: url('../img/heroTest1.jpg');
         background-size: cover;
         background-position: center center;
@@ -2859,6 +2870,12 @@ background-color: rgba(255,255,255,0.9);
     color: #333333;
     line-height: 38px;
     font-family: 'lato';
+}
+
+@media (max-width: 600px) {
+    #anatomy4 h5{
+        font-size: 16px;
+    }
 }
 
 #anatomy4 i{
@@ -2953,8 +2970,7 @@ background: rgba(51,51,49,0);
     right: 0;
     z-index: 100;
     visibility: hidden;
-    width: 28%;
-    min-width: 350px;
+    width: 350px;
     height: 100%;
     background: #28282E;
     -webkit-transition: all 0.5s;
@@ -2993,7 +3009,6 @@ height: 100%;
 .st-menu ul {
     margin: 0;
     padding: 0;
-    padding-right: 55px;
     margin-top: 30px;
     list-style: none;
 }
@@ -3014,7 +3029,7 @@ height: 100%;
     text-decoration: none;
     text-align: right;
     display: block;
-    padding: 1em 1em 1em 1.2em;
+    padding: 1em 3em 1em 1.2em;
     outline: none;
     box-shadow: inset 0 -1px rgba(0,0,0,0.2);
     color: #f3efe0;
@@ -3108,9 +3123,9 @@ height: 100%;
 }
 
 #home {
-    width: 100vw;
-    height: 100vh;
-    display:block;
+    width: 100%;
+    height: 100%;
+    display: block;
     position: relative;
 }
 
@@ -3136,6 +3151,27 @@ height: 100%;
     padding-bottom: 15px;
     }
 
+.banner_inner {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    width: 650px;
+    margin: 0 auto;
+
+}
+@media (max-width: 600px) {
+    .banner_inner {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .banner_wrap h1 {
+        font-size: 50px;
+    }
+    .banner_wrap p {
+        font-size: 20px;
+    }
+}
 
 .header_fixed {
     padding: 30px 0 0 0;
@@ -3145,8 +3181,11 @@ height: 100%;
     right: 0;
     width: 100%;
     z-index: 1900;
-    transition: 0.3s all ease-in;
-
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -webkit-transition: 0.3s all ease-in;
+            transition: 0.3s all ease-in;
+    
 }
 
 #main_logo {
@@ -3172,7 +3211,7 @@ height: 100%;
 }
 
 video {
-position: absolute;
+    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
@@ -3182,12 +3221,19 @@ position: absolute;
     min-width: 50%;
 }
 
+.mobile_header_show {
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/mobile_header.jpg') no-repeat center;
+    background-size: cover;
+}
+
 .video_shader {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.61);
+    
 }
 
 .menu {
@@ -3424,9 +3470,9 @@ background-size: contain;
   width: 764px;
   margin: 1340px auto 100px;
   background: white url("../img/well.png") no-repeat 0 0;
-  -webkit-background-size: 764px 613px;
   background-size: 764px 613px;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .mac.intro {
@@ -3434,7 +3480,6 @@ background-size: contain;
   width: 2548px;
   z-index:9999;
   height: 2052px;
-  -webkit-background-size: 100% auto;
   background-size: 100% auto;
   margin: 0;
   top: 0;
@@ -3468,11 +3513,11 @@ background-size: contain;
 }
 
 .request_now {
-    -webkit-backface-visibility: hidden;
+     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
     text-decoration: none;
     z-index: 9999;
-    font-size: 24px;
+    font-size: 18px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     text-align: center;
     color: #fff;
@@ -3483,9 +3528,8 @@ background-size: contain;
     position: fixed;
     bottom: 0;
     right: 25px;
-    width: 150px;
-    height: 50px;
-
+    width: 105px;
+    height: 42px;
 }
 
 .request_now:hover {
@@ -3502,3 +3546,4 @@ background-size: contain;
     color: #fff;
     text-decoration: none;
 } 
+
